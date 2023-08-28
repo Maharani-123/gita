@@ -2,11 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('GitHub') {
-            steps {
-                git branch: 'main', credentialsId: 'ec2-user', url: 'https://github.com/Maharani-123/gita.git'
-            }
-        }
+        
         
         stage('build') {
             steps {
